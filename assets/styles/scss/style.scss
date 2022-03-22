@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import "variables";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    background-color: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+
+    #advice-section {
+        padding: 40px 15px;
+        margin: auto;
+        text-align: center;
+        background-color: $dark-grayish-blue;
+        border-radius: 15px;
+        color: $light-cyan;
+        box-shadow: 35px 35px 35px 15px rgba(0,0,0,.05);
+
+        h1 {
+            color: $neon-green;
+            font-size: 15px;
+            letter-spacing: .2rem;
+        }  
+
+        .divider-desktop { display: none; }
+        
+        @media (min-width: 1200px) {
+            padding: 40px 30px;
+            .divider-mobile { display: none; }
+            .divider-desktop { display: inline-block; }
+            width: 550px;
+        }
+    }
+
+    footer {
+        color: $grayish-blue;
+        padding: 40px 0;
+        font-size: 12px;
+        align-self: flex-end;
+        width: 100%;
+        text-align: center;
+    }
+}
