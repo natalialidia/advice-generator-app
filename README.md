@@ -7,7 +7,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  <!-- - [Links](#links) -->
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -26,10 +26,10 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-<!-- ### Links
+### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)  -->
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/advice-generator-app-with-sass-and-vanilla-javascript-r1J5HRsf5)
+- Live Site URL: [GitHub Pages](https://natalialidia.github.io/advice-generator-app/) 
 
 ## My process
 
@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Github - [@natalialidia](https://github.com/natalialidia)
+- GitHub - [@natalialidia](https://github.com/natalialidia)
 - Frontend Mentor - [@natalialidia](https://www.frontendmentor.io/profile/natalialidia)
