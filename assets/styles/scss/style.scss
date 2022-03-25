@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 @import "variables";
+@import "loading";
 
 html, body {
     margin: 0;
@@ -19,7 +20,8 @@ body {
     padding: 0 15px;
 
     #advice-section {
-        padding: 40px 15px;
+        position: relative;
+        padding: 40px 15px 60px 15px;
         margin: auto;
         text-align: center;
         background-color: $dark-grayish-blue;
@@ -28,19 +30,43 @@ body {
         box-shadow: 35px 35px 35px 15px rgba(0,0,0,.05);
 
         h1 {
+            text-transform: uppercase;
             color: $neon-green;
             font-size: 15px;
             letter-spacing: .2rem;
         }  
 
         .divider-desktop { display: none; }
+
+        .btn-random {
+            $btn-padding: 20px;
+            $btn-img-dimensions: 24px;
+            
+            position: absolute;
+            bottom: calc(-#{$btn-padding*2+$btn-img-dimensions}/2);
+            left: 50%;
+            transform: translate(-50%);
+            background-color: $neon-green;
+            padding: $btn-padding;
+            line-height: 0;
+            border: 0;
+            border-radius: 50%;
+            transition: box-shadow 200ms;
+        
+            &:hover, &:focus {
+                cursor: pointer;
+                cursor: pointer;
+                box-shadow: 0px 0px 40px $neon-green;
+            }
+        }
         
         @media (min-width: 1200px) {
-            padding: 40px 30px;
+            padding: 40px 30px 60px 30px;
             .divider-mobile { display: none; }
             .divider-desktop { display: inline-block; }
-            width: 550px;
+            width: 480px;
         }
+
     }
 
     footer {
@@ -50,5 +76,10 @@ body {
         align-self: flex-end;
         width: 100%;
         text-align: center;
+        
+        a, a:focus, a:hover {
+            color: $neon-green;
+            text-decoration: none;
+        }
     }
 }
